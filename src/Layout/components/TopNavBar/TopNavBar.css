@@ -1,0 +1,28 @@
+.top-nav-bar {
+    position: fixed;
+    border-bottom: 1px solid transparent;
+    height: 50px;
+    width: calc(100% - 100px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav-links {
+    border: 1px solid transparent;
+    margin-right: 80px;
+}
+
+.top-nav-link>img {
+    width: 45px;
+    height: 40px;
+    margin-right: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.top-nav-link>img:hover {
+    background-color: rgba(132, 76, 230, 0.336);
+}

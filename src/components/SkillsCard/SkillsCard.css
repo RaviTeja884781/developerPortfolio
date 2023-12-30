@@ -1,0 +1,36 @@
+.skills-card-container {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    width: 90%;
+    height: 300px;
+    flex-wrap: wrap;
+    /* margin: 20px; */
+}
+
+.skills-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+}
+
+.skills-card>img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.skills-card>p {
+    font-size: 14px;
+    font-weight: 500;
+}

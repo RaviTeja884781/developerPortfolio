@@ -1,0 +1,17 @@
+.SideNavBar {
+    width: 100px;
+    position: fixed;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    border-right: 1px solid transparent;
+}
+
+.SideNavBar>p{
+    font-weight: 900;
+    margin: 40px 5px;
+}

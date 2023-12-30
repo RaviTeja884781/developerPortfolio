@@ -1,0 +1,29 @@
+.link-card {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 8px;
+}
+
+.link-card:hover {
+    border-color: rgba(92, 92, 245, 0.598);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 1px;
+}
+
+.link-card-img {
+    margin-bottom: 8px;
+    width: 23px;
+    height: 23px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.link-card-label {
+    font-size: 12px;
+    font-weight: 500;
+}
