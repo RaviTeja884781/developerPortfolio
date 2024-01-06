@@ -8,11 +8,23 @@
     z-index: 100;
 }
 
-.about-me-carousel {
+.about-me-carousel-cont {
     width: 40%;
     border: 1px solid transparent;
     margin-right: 20px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me-carousel-btn-cont {
+    width: 30%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .about-me-descs {
@@ -42,4 +54,20 @@
 
 .about-me-desc>span>p {
     margin-bottom: 8px;
+}
+
+.about-me-btn {
+    border: 2px solid transparent;
+    padding: 5px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: rgb(81, 169, 241);
+    color: #ccc;
+    height: 40px;
+}
+
+.about-me-btn:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }

@@ -7,6 +7,7 @@ const TopBreadCrum = () => {
   const pathnames = location.pathname.split("/").filter((x) => x);
 
   const breadcrumbs = pathnames.map((path, index) => {
+    console.log(path);
     const route = `/${pathnames.slice(0, index + 1).join("/")}`;
     const isLast = index === pathnames.length - 1;
 

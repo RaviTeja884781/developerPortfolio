@@ -1,6 +1,9 @@
 import {
-  about,
+  aboutMe,
   skills,
+  project,
+  education,
+  exp,
   github,
   linkedin,
   react,
@@ -28,14 +31,14 @@ import {
   postman,
   bitbucket,
 } from "../assets/svgs/";
-import { img1, img2 } from "../assets/images";
+import { img1, img2, jsp, cutm, sric, alluri } from "../assets/images";
 
 const sideNavData = [
   {
     id: Math.random(),
     label: "About Me",
     path: "/about",
-    icon: about,
+    icon: aboutMe,
   },
   {
     id: Math.random(),
@@ -47,19 +50,19 @@ const sideNavData = [
     id: Math.random(),
     label: "Experience",
     path: "/experience",
-    icon: about,
+    icon: exp,
   },
   {
     id: Math.random(),
     label: "Projects",
     path: "/projects",
-    icon: about,
+    icon: project,
   },
   {
     id: Math.random(),
     label: "Education",
     path: "/education",
-    icon: about,
+    icon: education,
   },
 ];
 
@@ -149,6 +152,45 @@ const MySkills = {
   ],
 };
 
+const EducationInfo = [
+  {
+    id: Math.random(),
+    institutionName: "JSpiders Software Training Organisation",
+    period: "-6 Months",
+    stream: "MERN Stack",
+    grade: "",
+    icon: jsp,
+    desc: "I joined Jspiders (Bangalore) in April on the 18th and enrolled in the Full Stack Web Development course. After six months of dedicated effort and hard work, I successfully completed the course with a focus on industrial-standard practices. I gained a comprehensive understanding of the MERN (MongoDB, Express.js, React.js, Node.js) stack and honed my skills in HTML, CSS, and JavaScript. My learning experience has equipped me with crystal-clear concepts, ensuring I am well-prepared for professional application development.",
+  },
+  {
+    id: Math.random(),
+    institutionName: "Centurion University of Technology and Management",
+    period: "-2016 - 2020",
+    stream: "Bachelor of Technology in Mechanical Engineering",
+    grade: "8.1cgpa",
+    icon: cutm,
+    desc: "I completed my Bachelor of Technology in Mechanical Engineeringat at Centurion University of Technology and Management,Paralakhemundi,Odish",
+  },
+  {
+    id: Math.random(),
+    institutionName: "sri chaitanya junior collage,Vishakapatanam(Ap)",
+    period: "-2015 - 2016",
+    stream: "12th",
+    grade: "89.6%",
+    icon: sric,
+    desc: "I completed my class 12th education at Sri Chaitanya Junior Collage,Vishakapatanam,Andhra Pradesh",
+  },
+  {
+    id: Math.random(),
+    institutionName: "ALLURI SITA RAMARAJU PUBLIC SCHOOL,ARAKU VALLEY",
+    period: "-2008 - 2014",
+    stream: "4th to 10th",
+    grade: "7.6cgpa",
+    icon: alluri,
+    desc: "I completed my class 10 education at ALLURI SITA RAMARAJU PUBLIC SCHOOL,ARAKU VALLEY, where I studied class 4th to 10th.",
+  },
+];
+
 export {
   sideNavData,
   TopNavData,
@@ -157,4 +199,5 @@ export {
   textList,
   MySkills,
   ContactInfo,
+  EducationInfo,
 };

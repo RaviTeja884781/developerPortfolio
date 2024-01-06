@@ -1,5 +1,3 @@
-import about from "./about.svg";
-import skills from "./skills.svg";
 import github from "./github-octocat-svgrepo-com.svg";
 import linkedin from "./linkedin-svgrepo-com.svg";
 import leftArrow from "./left-arrow-svgrepo-com.svg";
@@ -29,10 +27,13 @@ import github_ from "./others/github.svg";
 import office from "./others/office.svg";
 import postman from "./others/postman.svg";
 import bitbucket from "./others/bitbucket.svg";
-
+import previewEye from "./eye.svg";
+import aboutMe from "./sideNav/about-me.svg";
+import skills from "./sideNav/skills.svg";
+import project from "./sideNav/projects.svg";
+import exp from "./sideNav/experience.svg"
+import education from "./sideNav/education.svg";
 export {
-  about,
-  skills,
   github,
   linkedin,
   leftArrow,
@@ -62,4 +63,10 @@ export {
   office,
   postman,
   bitbucket,
+  previewEye,
+  aboutMe,
+  skills,
+  project,
+  education,
+  exp
 };

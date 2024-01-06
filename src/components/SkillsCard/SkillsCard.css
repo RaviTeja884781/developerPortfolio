@@ -10,12 +10,11 @@
     width: 90%;
     height: 300px;
     flex-wrap: wrap;
-    /* margin: 20px; */
 }
 
 .skills-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid rgba(81, 169, 241, 0.178);
+    border-radius: 8px;
     display: flex;
     justify-content: flex-start;
     padding: 8px;

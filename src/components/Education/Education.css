@@ -1,0 +1,58 @@
+.edu-container {
+    padding: 20px;
+}
+
+.edu-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.edu-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.edu-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.edu-stream {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.edu-card {
+    border: 1px solid rgb(81, 169, 241);
+    border-radius: 8px;
+    padding: 15px;
+    width: 45%;
+    margin: 10px;
+}
+
+.edu-card-header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.edu-card-header>img {
+    border: 1px solid rgba(81, 169, 241, 0.178);
+    border-radius: 8px;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+}
+
+.edu-card-grade {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.edu-card-body {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}

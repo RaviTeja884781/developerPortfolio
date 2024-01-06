@@ -2,6 +2,10 @@ import { About, Skills, Experience, Projects, Education } from "../components";
 
 const RoutesComponents = [
   {
+    path: "/",
+    Component: About,
+  },
+  {
     path: "/about",
     Component: About,
   },

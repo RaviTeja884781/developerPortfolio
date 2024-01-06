@@ -3,22 +3,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./LinkCard.css";
 
-const LinkCard = ({ item }) => {
+const LinkCard = ({ item, active }) => {
   return (
-    <div className="link-card">
-      <Link to={item.path}>
-        <img
-          className="link-card-img"
-          src={item.icon}
-          alt="icons"
-        />
-        <p className="link-card-label">{item.label}</p>
-      </Link>
-    </div>
+    <Link to={item.path} className={`link-card-cont ${active ? "active" : ""}`}>
+      <div className={`${active ? "active-highlight" : ""}`}></div>
+      <div className="link-card">
+        <img src={item.icon} alt="icons" />
+        <p>{item.label}</p>
+      </div>
+    </Link>
   );
 };
 
 LinkCard.propTypes = {
+  active: PropTypes.number.isRequired,
   item: PropTypes.shape({
     icon: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
