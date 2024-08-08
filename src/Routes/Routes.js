@@ -1,4 +1,4 @@
-import { About, Skills, Experience, Projects, Education } from "../components";
+import { About, Skills, Experience, Projects, Education,MyResume } from "../components";
 
 const RoutesComponents = [
   {
@@ -8,6 +8,10 @@ const RoutesComponents = [
   {
     path: "/about",
     Component: About,
+  },
+  {
+    path: "/about/myResume",
+    Component: MyResume,
   },
   {
     path: "/skills",

@@ -4,19 +4,10 @@ import TypingAnimation from "../TypingAnimation/TypingAnimation";
 import { description, images, textList } from "../../data/data";
 import { previewEye } from "../../assets/svgs";
 import "./About.css";
-import ResumeModel from "../ResumeModel/ResumeModel";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
   const [visibleItems, setVisibleItems] = useState(2);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
 
   const toggleItemsVisibility = () => {
     setVisibleItems((prevVisibleItems) =>
@@ -29,6 +20,10 @@ const About = () => {
       "https://drive.google.com/file/d/11lhpij_d2v6ZP1mW0AZ2gaJaYqmWegOh/view?usp=drive_link";
     window.open(resumeLink, "_blank");
   };
+  const navigate = useNavigate();
+  const moveToMyResume = () => {
+    navigate("/about/myResume");
+  };
 
   return (
     <div className="about-me-container">
@@ -38,75 +33,9 @@ const About = () => {
           <button className="about-me-btn" onClick={downloadResume}>
             Check Resume
           </button>
-          <button className="about-me-btn" onClick={openModal}>
+          <button className="about-me-btn" onClick={moveToMyResume}>
             <img src={previewEye} alt="previewEye" width="25px" height="25px" />
           </button>
-          {/* {openModal && ( */}
-            <ResumeModel isOpen={isModalOpen} onClose={closeModal}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              harum optio quas voluptatum provident accusantium eveniet id,
-              ipsam aliquam repudiandae facere corporis assumenda minus
-              quibusdam voluptas, alias odit facilis adipisci? Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Quasi ipsa maxime nulla,
-              neque, ipsum, fuga laudantium consequuntur odit temporibus
-              explicabo nam ab ex asperiores placeat beatae veniam? Beatae,
-              officiis voluptatibus? Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quasi ipsa maxime nulla, neque, ipsum, fuga
-              laudantium consequuntur odit temporibus explicabo nam ab ex
-              asperiores placeat beatae veniam? Beatae, officiis voluptatibus?
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              ipsa maxime nulla, neque, ipsum, fuga laudantium consequuntur odit
-              temporibus explicabo nam ab ex asperiores placeat beatae veniam?
-              Beatae, officiis voluptatibus? Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Quasi ipsa maxime nulla, neque,
-              ipsum, fuga laudantium consequuntur odit temporibus explicabo nam
-              ab ex asperiores placeat beatae veniam? Beatae, officiis
-              voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Quasi ipsa maxime nulla, neque, ipsum, fuga laudantium
-              consequuntur odit temporibus explicabo nam ab ex asperiores
-              placeat beatae veniam? Beatae, officiis voluptatibus? Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Quasi ipsa maxime
-              nulla, neque, ipsum, fuga laudantium consequuntur odit temporibus
-              explicabo nam ab ex asperiores placeat beatae veniam? Beatae,
-              officiis voluptatibus? Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quasi ipsa maxime nulla, neque, ipsum, fuga
-              laudantium consequuntur odit temporibus explicabo nam ab ex
-              asperiores placeat beatae veniam? Beatae, officiis voluptatibus?
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              ipsa maxime nulla, neque, ipsum, fuga laudantium consequuntur odit
-              temporibus explicabo nam ab ex asperiores placeat beatae veniam?
-              Beatae, officiis voluptatibus? Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Quasi ipsa maxime nulla, neque,
-              ipsum, fuga laudantium consequuntur odit temporibus explicabo nam
-              ab ex asperiores placeat beatae veniam? Beatae, officiis
-              voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Quasi ipsa maxime nulla, neque, ipsum, fuga laudantium
-              consequuntur odit temporibus explicabo nam ab ex asperiores
-              placeat beatae veniam? Beatae, officiis voluptatibus? Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Quasi ipsa maxime
-              nulla, neque, ipsum, fuga laudantium consequuntur odit temporibus
-              explicabo nam ab ex asperiores placeat beatae veniam? Beatae,
-              officiis voluptatibus? Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quasi ipsa maxime nulla, neque, ipsum, fuga
-              laudantium consequuntur odit temporibus explicabo nam ab ex
-              asperiores placeat beatae veniam? Beatae, officiis voluptatibus?
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              ipsa maxime nulla, neque, ipsum, fuga laudantium consequuntur odit
-              temporibus explicabo nam ab ex asperiores placeat beatae veniam?
-              Beatae, officiis voluptatibus? Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Quasi ipsa maxime nulla, neque,
-              ipsum, fuga laudantium consequuntur odit temporibus explicabo nam
-              ab ex asperiores placeat beatae veniam? Beatae, officiis
-              voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Quasi ipsa maxime nulla, neque, ipsum, fuga laudantium
-              consequuntur odit temporibus explicabo nam ab ex asperiores
-              placeat beatae veniam? Beatae, officiis voluptatibus? Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Quasi ipsa maxime
-              nulla, neque, ipsum, fuga laudantium consequuntur odit temporibus
-              explicabo nam ab ex asperiores placeat beatae veniam? Beatae,
-              officiis voluptatibus?
-            </ResumeModel>
-          {/* )} */}
         </div>
       </div>
       <div className="about-me-descs">

@@ -5,6 +5,7 @@ import Projects from "./Projects/Projects";
 import Education from "./Education/Education";
 import LinkCard from "./LinkCard/LinkCard";
 import TopBreadCrum from "./TopBreadCrum/TopBreadCrum";
+import MyResume from "./MyResume/MyResume";
 
 export {
   About,
@@ -14,4 +15,5 @@ export {
   Education,
   LinkCard,
   TopBreadCrum,
+  MyResume,
 };
