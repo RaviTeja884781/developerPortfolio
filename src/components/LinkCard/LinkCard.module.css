@@ -1,53 +1,37 @@
-.link-card-cont {
+.link_card_cont {
     border: 2px solid transparent;
     border-radius: 5px;
     height: fit-content;
-    display: flex;
+    display: flex !important;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 40px;
-    width: 90%;
+    margin-bottom: 20px;
+    width: 89%;
 }
 
-.link-card {
+.link_card {
     border: 2px solid transparent;
-    border-radius: 5px;
-    width: 90%;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 8px;
 }
 
-.link-card-cont:hover {
+.link_card_cont:hover {
     border-color: rgb(81, 169, 241);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 1px;
 }
 
-.link-card-cont.active {
+.link_card_cont.active {
     background-color: rgba(81, 169, 241, 0.178);
     border-color: rgb(81, 169, 241);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 1px;
 }
 
-.active-highlight {
-    border: 1px solid transparent;
-    border-radius: 5px;
-    width: 5px;
-    height: 35px;
-    background-color: rgb(81, 169, 241);
-}
-
-.link-card>img {
+.link_card>img {
     margin-bottom: 8px;
     width: 30px;
     height: 30px;
     border: 1px solid transparent;
     border-radius: 5px;
-}
-
-.link-card>p {
-    font-size: 12px;
-    font-weight: 500;
 }

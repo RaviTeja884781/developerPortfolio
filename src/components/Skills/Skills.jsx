@@ -1,37 +1,81 @@
 import React from "react";
-import "./Skills.css";
+import styles from "./Skills.module.css";
 import SkillsCard from "../SkillsCard/SkillsCard";
 import { MySkills } from "../../data/data";
+import { Box, Heading, Paragraph, Divider } from "react-ui-essentials";
 
 const Skills = () => {
   return (
-    <div className="skills">
-      <div className="skills-header">
-        <h1>Skills</h1>
-        <p>
+    <Box className={styles.skills}>
+      <Box
+        width="100%"
+        padding="5px 20px"
+        margin="0px 0px 30px 0px"
+        className={styles.skills_header}
+      >
+        <Heading type="h1" color="#ccc" >
+          Skills
+        </Heading>
+        <Paragraph color="#ccc" >
           Here are some of my skills on which I have been working on for the
           past 2 years.
-        </p>
-      </div>
-      <div className="skills-body">
-        <div className="skills-frontend">
-          <p>FrontEnd :</p>
+        </Paragraph>
+      </Box>
+      <Box className={styles.skills_body}>
+        <Box
+          margin="20px"
+          width="45%"
+          padding="10px 20px"
+          className={styles.skills_frontend}
+          rounded
+        >
+          <Heading type="h3" color="#ccc">
+            FrontEnd
+          </Heading>
+          <Divider margin="4px 0" />
           <SkillsCard data={MySkills.FrontEnd} />
-        </div>
-        <div className="skills-backend">
-          <p>Backend :</p>
+        </Box>
+        <Box
+          margin="20px"
+          width="45%"
+          padding="10px 20px"
+          className={styles.skills_backend}
+          rounded
+        >
+          <Heading type="h3" color="#ccc">
+            Backend
+          </Heading>
+          <Divider margin="4px 0" />
           <SkillsCard data={MySkills.Backend} />
-        </div>
-        <div className="skills-pkg">
-          <p>Package Managers :</p>
+        </Box>
+        <Box
+          margin="20px"
+          width="45%"
+          padding="10px 20px"
+          className={styles.skills_pkg}
+          rounded
+        >
+          <Heading type="h3" color="#ccc">
+            Package Managers
+          </Heading>
+          <Divider margin="4px 0" />
           <SkillsCard data={MySkills.PackageManagers} />
-        </div>
-        <div className="skills-other">
-          <p>Other :</p>
+        </Box>
+        <Box
+          margin="20px"
+          width="45%"
+          padding="10px 20px"
+          className={styles.skills_other}
+          rounded
+        >
+          <Heading type="h3" color="#ccc">
+            Other
+          </Heading>
+          <Divider margin="4px 0" />
           <SkillsCard data={MySkills.Other} />
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 

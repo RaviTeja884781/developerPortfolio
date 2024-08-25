@@ -1,13 +1,14 @@
 import React from "react";
-import { useLocation, Link } from "react-router-dom";
-import "./TopBreadCrum.css";
+import { useLocation } from "react-router-dom";
+import styles from "./TopBreadCrum.module.css";
+import { Box, Link } from "react-ui-essentials";
+import { Fragment } from "react";
 
 const TopBreadCrum = () => {
   const location = useLocation();
   const pathnames = location.pathname.split("/").filter((x) => x);
 
   const breadcrumbs = pathnames.map((path, index) => {
-    console.log(path);
     const route = `/${pathnames.slice(0, index + 1).join("/")}`;
     const isLast = index === pathnames.length - 1;
 
@@ -16,6 +17,7 @@ const TopBreadCrum = () => {
         path = "About Me";
         break;
     }
+
     return (
       <span key={route}>
         {isLast ? <span>{path}</span> : <Link to={route}>{path}</Link>}
@@ -23,10 +25,23 @@ const TopBreadCrum = () => {
       </span>
     );
   });
+
   return (
-    <div className="breadcrum">
-      <h5>{breadcrumbs}</h5>
-    </div>
+    <Fragment>
+      {breadcrumbs && (
+        <Box
+          width="auto"
+          height="25px"
+          padding="4px 8px"
+          margin="8px 0px 0px 10px"
+          backgroundColor="rgba(81, 169, 241, 0.178)"
+          className={styles.breadcrum}
+          rounded
+        >
+          <h5>{breadcrumbs}</h5>
+        </Box>
+      )}
+    </Fragment>
   );
 };
 

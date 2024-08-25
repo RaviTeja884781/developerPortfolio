@@ -1,0 +1,8 @@
+.breadcrum {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ccc;
+    border: 1px solid rgba(81, 169, 241);
+}

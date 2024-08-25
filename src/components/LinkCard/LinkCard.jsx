@@ -1,16 +1,27 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { Link } from "react-router-dom";
-import "./LinkCard.css";
+import { Link, Box, Paragraph } from "react-ui-essentials";
+import styles from "./LinkCard.module.css";
 
 const LinkCard = ({ item, active }) => {
   return (
-    <Link to={item.path} className={`link-card-cont ${active ? "active" : ""}`}>
-      <div className={`${active ? "active-highlight" : ""}`}></div>
-      <div className="link-card">
+    <Link
+      to={item.path}
+      className={`${styles.link_card_cont} ${active ? styles.active : ""}`}
+    >
+      <Box
+        width={active ? "5px" : ""}
+        height={active ? "35px" : ""}
+        margin="0px 2px"
+        backgroundColor={active ? "rgb(81, 169, 241)" : ""}
+        rounded
+      ></Box>
+      <Box width="90%" padding="8px" className={styles.link_card} rounded>
         <img src={item.icon} alt="icons" />
-        <p>{item.label}</p>
-      </div>
+        <Paragraph color="#ccc" fontSize="12px" fontWeight="500">
+          {item.label}
+        </Paragraph>
+      </Box>
     </Link>
   );
 };

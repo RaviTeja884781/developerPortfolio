@@ -28,4 +28,5 @@ const TypingAnimation = ({ texts, speed }) => {
     </span>
   );
 };
+
 export default TypingAnimation;

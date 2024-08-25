@@ -1,16 +1,31 @@
 import React from "react";
-import "./SkillsCard.css";
+import styles from "./SkillsCard.module.css";
+import { Box, Paragraph } from "react-ui-essentials";
 
 const SkillsCard = ({ data }) => {
   return (
-    <div className="skills-card-container">
+    <Box
+      width="90%"
+      height="150px"
+      padding="10px 5px"
+      className={styles.skills_card_container}
+      rounded
+    >
       {data.map((item) => (
-        <div className="skills-card" key={item.id}>
+        <Box
+          height="35px"
+          padding="0 8px"
+          className={styles.skills_card}
+          key={item.id}
+          rounded
+        >
           <img src={item.icon} alt={item.icon} />
-          <p>{item.label}</p>
-        </div>
+          <Paragraph color="#ccc" fontSize="14px" fontWeight="500">
+            {item.label}
+          </Paragraph>
+        </Box>
       ))}
-    </div>
+    </Box>
   );
 };
 

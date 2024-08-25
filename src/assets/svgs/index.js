@@ -27,12 +27,12 @@ import github_ from "./others/github.svg";
 import office from "./others/office.svg";
 import postman from "./others/postman.svg";
 import bitbucket from "./others/bitbucket.svg";
-import previewEye from "./eye.svg";
 import aboutMe from "./sideNav/about-me.svg";
 import skills from "./sideNav/skills.svg";
 import project from "./sideNav/projects.svg";
 import exp from "./sideNav/experience.svg"
 import education from "./sideNav/education.svg";
+
 export {
   github,
   linkedin,
@@ -63,7 +63,6 @@ export {
   office,
   postman,
   bitbucket,
-  previewEye,
   aboutMe,
   skills,
   project,

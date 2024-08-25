@@ -1,6 +1,8 @@
 import React from "react";
-import "./Carousel.css";
-import { leftArrow, rightArrow } from "../../assets/svgs";
+import styles from "./Carousel.module.css";
+import { Box, Button } from "react-ui-essentials";
+import { LucideIcons } from "react-ui-essentials-icons";
+const { ChevronLeft, ChevronRight } = LucideIcons;
 
 const Carousel = ({ images }) => {
   const [currentImage, setCurrentImage] = React.useState(0);
@@ -11,15 +13,29 @@ const Carousel = ({ images }) => {
     setCurrentImage(currentImage === images.length - 1 ? 0 : currentImage + 1);
   };
   return (
-    <div className="carousel">
-      <button className="prev-button" onClick={handlePrevClick}>
-        <img src={leftArrow} alt="leftArrow" width="15px" height="15px" />
-      </button>
-      <img className="carousel-img" src={images[currentImage]} alt="Carousel Image" width="450px" height="450px" />
-      <button className="next-button" onClick={handleNextClick}>
-        <img src={rightArrow} alt="rightArrow" width="15px" height="15px" />
-      </button>
-    </div>
+    <Box className={styles.carousel}>
+      <Button
+        variant="light"
+        className={styles.prev_button}
+        onClick={handlePrevClick}
+      >
+        <ChevronLeft width="25px" height="25px" />
+      </Button>
+      <img
+        className={styles.carousel_img}
+        src={images[currentImage]}
+        alt="Carousel Image"
+        width="450px"
+        height="450px"
+      />
+      <Button
+        variant="light"
+        className={styles.next_button}
+        onClick={handleNextClick}
+      >
+        <ChevronRight width="25px" height="25px" />
+      </Button>
+    </Box>
   );
 };
 export default Carousel;

@@ -1,3 +1,5 @@
+import { ColouredIcons } from 'react-ui-essentials-icons';
+const { GithubOctocat,Linkedin } = ColouredIcons;
 import {
   aboutMe,
   skills,
@@ -30,7 +32,7 @@ import {
   office,
   postman,
   bitbucket,
-} from "../assets/svgs/";
+} from "../assets/svgs";
 import { img1, img2, jsp, cutm, sric, alluri } from "../assets/images";
 
 const sideNavData = [
@@ -69,12 +71,12 @@ const sideNavData = [
 const TopNavData = [
   {
     id: Math.random(),
-    icon: github,
+    icon:  <GithubOctocat width="20px" height="20px"  />,
     path: "https://github.com/RaviTeja884781",
   },
   {
     id: Math.random(),
-    icon: linkedin,
+    icon: <Linkedin width="20px" height="20px"   />,
     path: "https://www.linkedin.com/in/ravi-teja-2a2989145?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
   },
 ];
