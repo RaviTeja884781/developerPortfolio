@@ -14,10 +14,7 @@ const SideNavBar = () => {
   }, [location.pathname]);
 
   return (
-    <Box width="110px" height="100vh" className={styles.SideNavBar}>
-      <Paragraph fontSize="14px" fontWeight="900" color="rgb(81, 169, 241)">
-        Portfolio
-      </Paragraph>
+    <Box padding="20px 0 0 0" width="100px" height="100vh" className={styles.SideNavBar}>
       {sideNavData.map((item) => (
         <LinkCard key={item.id} active={item.path === activePath} item={item} />
       ))}

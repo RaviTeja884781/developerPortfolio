@@ -23,14 +23,14 @@ const SidebarPortal = ({ id, children }) => {
 
 const TopNavBar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const screenSize = useBreakpoints();
+
   let drawerWidth;
 
   switch (screenSize.breakpoint) {
     case "sm":
-      drawerWidth = "45%";
+      drawerWidth = "50%";
       break;
     case "md":
       drawerWidth = "35%";
@@ -42,36 +42,41 @@ const TopNavBar = () => {
       drawerWidth = "25%";
       break;
     default:
+      drawerWidth = "50%";
       break;
   }
+
   const toggleSidebar = () => {
-    setShowSidebar(!isDrawerOpen);
+    setShowSidebar((prev) => !prev);
   };
+
   return (
     <Fragment>
       <Box
         height="50px"
-        width="calc(100% - 100px)"
+        width="100%"
         padding="5px"
         className={styles.top_nav_bar}
       >
-        <div className={styles.topnav_menu}>
-          <Button
-            variant="light"
-            size="sm"
-            arai-label="Menu"
-            onClick={toggleSidebar}
-          >
-            <Button.Icon>
-              <Menu
-                width="20px"
-                height="20px"
-                style={{ marginBottom: "-1.5px" }}
-              />
-            </Button.Icon>
-          </Button>
-        </div>
-        <TopBreadCrum />
+        <Box style={{ display: "flex", gap: "15px" }}>
+          <div className={styles.topnav_menu}>
+            <Button
+              variant="light"
+              size="sm"
+              aria-label="Menu"
+              onClick={toggleSidebar}
+            >
+              <Button.Icon>
+                <Menu
+                  width="20px"
+                  height="20px"
+                  style={{ marginBottom: "-1.5px" }}
+                />
+              </Button.Icon>
+            </Button>
+          </div>
+          <TopBreadCrum />
+        </Box>
         <Box className={styles.top_nav_links}>
           {TopNavData.map((item) => (
             <Link
@@ -92,7 +97,7 @@ const TopNavBar = () => {
           position="left"
           width={drawerWidth}
         >
-          <SideBar width="100%" style={{backgroundColor:"#191924"}}>
+          <SideBar width="100%" >
             <SideBar.Body routes={routes} />
           </SideBar>
         </Drawer>

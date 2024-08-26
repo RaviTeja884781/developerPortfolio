@@ -13,10 +13,10 @@ const Skills = () => {
         margin="0px 0px 30px 0px"
         className={styles.skills_header}
       >
-        <Heading type="h1" color="#ccc" >
+        <Heading type="h1" color="#000" >
           Skills
         </Heading>
-        <Paragraph color="#ccc" >
+        <Paragraph color="#000" >
           Here are some of my skills on which I have been working on for the
           past 2 years.
         </Paragraph>
@@ -29,7 +29,7 @@ const Skills = () => {
           className={styles.skills_frontend}
           rounded
         >
-          <Heading type="h3" color="#ccc">
+          <Heading type="h3" color="#000">
             FrontEnd
           </Heading>
           <Divider margin="4px 0" />
@@ -42,7 +42,7 @@ const Skills = () => {
           className={styles.skills_backend}
           rounded
         >
-          <Heading type="h3" color="#ccc">
+          <Heading type="h3" color="#000">
             Backend
           </Heading>
           <Divider margin="4px 0" />
@@ -55,7 +55,7 @@ const Skills = () => {
           className={styles.skills_pkg}
           rounded
         >
-          <Heading type="h3" color="#ccc">
+          <Heading type="h3" color="#000">
             Package Managers
           </Heading>
           <Divider margin="4px 0" />
@@ -68,7 +68,7 @@ const Skills = () => {
           className={styles.skills_other}
           rounded
         >
-          <Heading type="h3" color="#ccc">
+          <Heading type="h3" color="#000">
             Other
           </Heading>
           <Divider margin="4px 0" />

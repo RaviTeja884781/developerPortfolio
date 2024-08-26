@@ -55,7 +55,7 @@ const About = () => {
         <Paragraph
           fontSize="30px"
           fontWeight="700"
-          color="#fff"
+          color="#000"
           style={{  lineHeight: "30px" }}
           italic
         >
@@ -63,7 +63,7 @@ const About = () => {
         </Paragraph>
         <Paragraph
           fontWeight="600"
-          color="#fff"
+          color="#000"
           fontSize="25px"
           style={{  lineHeight: "20px" }}
           className={styles.about_me_desi}
@@ -73,7 +73,7 @@ const About = () => {
         <Box className={styles.about_me_desc}>
           {description.slice(0, visibleItems).map((item) => (
             <span key={item.id}>
-              <Paragraph color="#ccc">{item.desc}</Paragraph>
+              <Paragraph color="#000">{item.desc}</Paragraph>
             </span>
           ))}
           {description.length > 2 && (

@@ -1,25 +1,26 @@
 import PropTypes from "prop-types";
 import React from "react";
-import "./Layout.css";
+import styles from "./Layout.module.css";
 import TopNavBar from "./components/TopNavBar/TopNavBar";
 import SideNavBar from "./components/SideNavBar/SideNavBar";
 import Content from "./components/Content/Content";
+import { Box } from "react-ui-essentials";
 
 const Layout = (props) => {
   return (
-    <div className="layout">
-      <aside className="layout-side-nav">
-        <SideNavBar />
-      </aside>
-      <div className="layout-cont">
-        <nav className="layout-top-nav">
-          <TopNavBar />
-        </nav>
-        <section className="layout-content">
+    <Box width="100%" height="100vh" className={styles.layout}>
+      <nav className={styles.layout_top_nav}>
+        <TopNavBar />
+      </nav>
+      <Box className={styles.layout_cont}>
+        <aside className={styles.layout_side_nav}>
+          <SideNavBar />
+        </aside>
+        <section className={styles.layout_content}>
           <Content>{props.children}</Content>
         </section>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 };
 

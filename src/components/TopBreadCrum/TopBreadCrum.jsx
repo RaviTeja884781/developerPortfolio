@@ -33,7 +33,7 @@ const TopBreadCrum = () => {
           width="auto"
           height="25px"
           padding="4px 8px"
-          margin="8px 0px 0px 10px"
+          margin="0 14px"
           backgroundColor="rgba(81, 169, 241, 0.178)"
           className={styles.breadcrum}
           rounded

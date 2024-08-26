@@ -20,7 +20,7 @@ const SkillsCard = ({ data }) => {
           rounded
         >
           <img src={item.icon} alt={item.icon} />
-          <Paragraph color="#ccc" fontSize="14px" fontWeight="500">
+          <Paragraph color="#000" fontSize="14px" fontWeight="500">
             {item.label}
           </Paragraph>
         </Box>

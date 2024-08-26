@@ -1,38 +1,53 @@
 import React from "react";
-import "./Education.css";
+import styles from "./Education.module.css";
 import { EducationInfo } from "../../data/data";
+import { Box, Divider, Heading, Paragraph } from "react-ui-essentials";
 
 const Education = () => {
   return (
-    <div className="edu-container">
-      <div className="edu-header">
-        <h1>Education</h1>
-        <p>
+    <Box className={styles.edu_container}>
+      <Box className={styles.edu_header}>
+        <Heading type="h1" color="#000">
+          Education
+        </Heading>
+        <Paragraph color="#000">
           My education has been a journey of self-discovery and growth. My
           educational details are as follows.
-        </p>
-      </div>
-      <div className="edu-body">
+        </Paragraph>
+      </Box>
+      <Box className={styles.edu_body}>
         {EducationInfo.map((item) => (
-          <div className="edu-card">
-            <div className="edu-card-header">
+          <Box
+            width="45%"
+            margin="10px"
+            padding="15px"
+            className={styles.edu_card}
+            rounded
+          >
+            <Box className={styles.edu_card_header}>
               <img src={item.icon} alt={item.icon} />
-              <div>
-                <p className="edu-name">{item.institutionName}</p>
-                <p className="edu-stream">
-                  {item.stream}
-                  {item.period}
-                </p>
-              </div>
-            </div>
-            {item.grade && (
-              <div className="edu-card-grade">Grade: {item.grade}</div>
-            )}
-            <div className="edu-card-body">{item.desc}</div>
-          </div>
+              <Paragraph fontSize="15px" fontWeight="600" color="#000">
+                {item.institutionName.toUpperCase()}
+              </Paragraph>
+            </Box>
+            <Divider margin="8px 0 5px 0" />
+            <Box
+              margin="0 0 20px 0"
+              style={{ display: "flex", justifyContent: "space-between",alignItem:"center" }}
+            >
+              {item.grade && (
+                <Paragraph  fontSize="14px" className={styles.edu_card_grade} color="#000" >Grade: {item.grade}</Paragraph>
+              )}
+              <Paragraph fontSize="14px" color="#000" >
+                {item.stream}
+                {item.period}
+              </Paragraph>
+            </Box>
+            <Box className={styles.edu_card_body}>{item.desc}</Box>
+          </Box>
         ))}
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 };
 
