@@ -1,0 +1,13 @@
+.exp_header{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px
+}
+
+@media (max-width:575.98px) {
+
+    .exp_box {
+      flex-direction: column !important;
+    }
+}

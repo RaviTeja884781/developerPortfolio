@@ -32,7 +32,7 @@ const About = () => {
   return (
     <Box
       width="100%"
-      padding="80px 0 0 0"
+      padding="30px 0 0 0"
       className={styles.about_me_container}
     >
       <Box
@@ -51,7 +51,7 @@ const About = () => {
           </Tooltip>
         </Box>
       </Box>
-      <Box width="60%" padding="15px" className={styles.about_desc_container}>
+      <Box width="60%" height="500px" padding="15px" className={styles.about_desc_container}>
         <Paragraph
           fontSize="30px"
           fontWeight="700"

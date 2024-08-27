@@ -33,7 +33,7 @@ import {
   postman,
   bitbucket,
 } from "../assets/svgs";
-import { img1, img2, jsp, cutm, sric, alluri } from "../assets/images";
+import { img3, img1, jsp, cutm, sric, alluri } from "../assets/images";
 import { generateId } from "../utils/generateId";
 
 const sideNavData = [
@@ -85,27 +85,27 @@ const TopNavData = [
 let description = [
   {
     id: generateId(),
-    desc: "As a Software Engineer specializing in React.js frontend development, I bring a strong foundation in building dynamic and intuitive user interfaces. With a proven track record of delivering high-quality web applications, I am skilled in translating design mockups into responsive and engaging UI components.",
+    desc: "As a React.js frontend developer, I specialize in creating dynamic and intuitive user interfaces. My expertise lies in transforming design mockups into responsive, engaging UI components, consistently delivering high-quality web applications.",
   },
   {
     id: generateId(),
-    desc: "I excel in leveraging React.js frameworks and libraries to develop scalable and modular code, ensuring the maintainability and performance of applications. I have extensive experience collaborating with cross-functional teams, including designers, backend developers, and product managers, to create seamless user experiences and meet project goals.",
+    desc: "I excel at leveraging React.js frameworks and libraries to develop scalable, modular code. This approach ensures application maintainability and performance. My experience includes successful collaboration with cross-functional teams, including designers, backend developers, and product managers, to create seamless user experiences and meet project objectives.",
   },
   {
     id: generateId(),
-    desc: "Throughout my career, I have demonstrated a passion for staying updated with the latest industry trends and best practices. I possess a deep understanding of JavaScript, HTML, and CSS, allowing me to implement cutting-edge features and optimize website performance.",
+    desc: "Throughout my career, I've maintained a passion for staying current with industry trends and best practices. My deep understanding of JavaScript, HTML, and CSS enables me to implement cutting-edge features and optimize website performance effectively.",
   },
   {
     id: generateId(),
-    desc: "My strong problem-solving abilities enable me to tackle complex challenges and find innovative solutions, resulting in efficient and elegant code. I am a self-motivated professional who thrives in fast-paced environments, and I possess excellent communication skills that foster effective collaboration and knowledge sharing.",
+    desc: "My strong problem-solving skills allow me to tackle complex challenges and devise innovative solutions, resulting in efficient and elegant code. As a self-motivated professional, I thrive in fast-paced environments. My excellent communication skills foster effective collaboration and knowledge sharing within teams.",
   },
   {
     id: generateId(),
-    desc: "I am passionate about creating exceptional user experiences and driving positive impact through technology. I am always eager to take on new projects and contribute my expertise to deliver top-notch solutions. Feel free to connect with me on LinkedIn to explore potential collaborations or discuss the exciting world of React.js frontend development.",
+    desc: "I'm passionate about creating exceptional user experiences and driving positive impact through technology. Always eager to take on new projects, I'm ready to contribute my expertise to deliver top-notch solutions. I welcome connections on LinkedIn to explore potential collaborations or discuss the exciting world of React.js frontend development.",
   },
 ];
 
-const images = [img1, img2];
+const images = [img3, img1];
 
 const textList = [
   "Full stack Developer",
@@ -163,7 +163,7 @@ const EducationInfo = [
     stream: "MERN Stack",
     grade: "",
     icon: jsp,
-    desc: "I joined Jspiders (Bangalore) in April on the 18th and enrolled in the Full Stack Web Development course. After six months of dedicated effort and hard work, I successfully completed the course with a focus on industrial-standard practices. I gained a comprehensive understanding of the MERN (MongoDB, Express.js, React.js, Node.js) stack and honed my skills in HTML, CSS, and JavaScript. My learning experience has equipped me with crystal-clear concepts, ensuring I am well-prepared for professional application development.",
+    desc: "On April 18th, I enrolled in the Full Stack Web Development course at Jspiders in Bangalore. Over six months of intensive study and practical application, I successfully completed the program with a focus on industry-standard practices. This comprehensive training provided me with a deep understanding of the MERN (MongoDB, Express.js, React.js, Node.js) stack, while also refining my skills in core web technologies like HTML, CSS, and JavaScript. The rigorous curriculum and hands-on experience ensured I developed crystal-clear concepts in all aspects of full-stack development, leaving me well-equipped to tackle professional application development challenges with confidence and competence.",
   },
   {
     id: generateId(),
@@ -172,7 +172,7 @@ const EducationInfo = [
     stream: "B.Tech in ME",
     grade: "8.1 cgpa",
     icon: cutm,
-    desc: "I completed my Bachelor of Technology in Mechanical Engineeringat at Centurion University of Technology and Management,Paralakhemundi,Odish",
+    desc: "Completed my Bachelor of Technology in Mechanical Engineeringat at Centurion University of Technology and Management,Paralakhemundi,Odisha",
   },
   {
     id: generateId(),
@@ -181,7 +181,7 @@ const EducationInfo = [
     stream: "12th",
     grade: "89.6%",
     icon: sric,
-    desc: "I completed my class 12th education at Sri Chaitanya Junior Collage,Vishakapatanam,Andhra Pradesh",
+    desc: "Completed my class 12th education at Sri Chaitanya Junior Collage,Vishakapatanam,Andhra Pradesh",
   },
   {
     id: generateId(),
@@ -190,7 +190,7 @@ const EducationInfo = [
     stream: "4th to 10th",
     grade: "7.6cgpa",
     icon: alluri,
-    desc: "I completed my class 10 education at ALLURI SITA RAMARAJU PUBLIC SCHOOL,ARAKU VALLEY, where I studied class 4th to 10th.",
+    desc: "Completed my class 10 education at ALLURI SITA RAMARAJU PUBLIC SCHOOL,ARAKU VALLEY, where I studied class 4th to 10th.",
   },
 ];
 

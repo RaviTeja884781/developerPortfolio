@@ -16,7 +16,7 @@ const LinkCard = ({ item, active }) => {
         backgroundColor={active ? "rgb(81, 169, 241)" : ""}
         rounded
       ></Box>
-      <Box width="90%" padding="8px" className={styles.link_card} rounded>
+      <Box width="90%" padding="8px 3px" className={styles.link_card} rounded>
         <img src={item.icon} alt="icons" />
         <Paragraph color="#000" fontSize="12px" fontWeight="500">
           {item.label}

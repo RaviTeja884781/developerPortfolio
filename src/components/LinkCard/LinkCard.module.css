@@ -6,7 +6,9 @@
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 20px;
+    padding: 8px 0;
     width: 89%;
+    height:85px
 }
 
 .link_card {
@@ -30,8 +32,8 @@
 
 .link_card>img {
     margin-bottom: 8px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border: 1px solid transparent;
     border-radius: 5px;
 }

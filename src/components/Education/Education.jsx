@@ -5,8 +5,13 @@ import { Box, Divider, Heading, Paragraph } from "react-ui-essentials";
 
 const Education = () => {
   return (
-    <Box className={styles.edu_container}>
-      <Box className={styles.edu_header}>
+    <Box>
+      <Box
+        width="100%"
+        padding="5px 20px"
+        margin="0px 0px 30px 0px"
+        className={styles.edu_header}
+      >
         <Heading type="h1" color="#000">
           Education
         </Heading>
@@ -33,12 +38,22 @@ const Education = () => {
             <Divider margin="8px 0 5px 0" />
             <Box
               margin="0 0 20px 0"
-              style={{ display: "flex", justifyContent: "space-between",alignItem:"center" }}
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItem: "center",
+              }}
             >
               {item.grade && (
-                <Paragraph  fontSize="14px" className={styles.edu_card_grade} color="#000" >Grade: {item.grade}</Paragraph>
+                <Paragraph
+                  fontSize="14px"
+                  className={styles.edu_card_grade}
+                  color="#000"
+                >
+                  Grade: {item.grade}
+                </Paragraph>
               )}
-              <Paragraph fontSize="14px" color="#000" >
+              <Paragraph fontSize="14px" color="#000">
                 {item.stream}
                 {item.period}
               </Paragraph>
