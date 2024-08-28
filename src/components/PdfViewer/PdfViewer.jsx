@@ -4,7 +4,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 import { RoundedIcons } from "react-ui-essentials-icons";
 const { ZoomIn, ZoomOut, FlipCameraAndroid, ChevronLeft, ChevronRight } =
   RoundedIcons;
-import styles from "./PDFViewer.module.css";
+import styles from "./PdfViewer.module.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
