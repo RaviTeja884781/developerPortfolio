@@ -5,6 +5,7 @@ import {
   Projects,
   Education,
   MyResume,
+  Awards
 } from "../components";
 import { Navigate } from "react-router-dom";
 
@@ -36,6 +37,10 @@ const RoutesComponents = [
   {
     path: "/education",
     component: <Education />,
+  },
+  {
+    path: "/awards",
+    component: <Awards />,
   },
 ];
 

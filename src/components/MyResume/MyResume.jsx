@@ -1,19 +1,9 @@
 import React from "react";
 import resume from "../../assets/RaviTejaL.pdf";
+import PDFViewer from "../PdfViewer/PdfViewer";
 
 const MyResume = () => {
-  return (
-    <div style={{ width: "100%", height: "100vh", overflow: "hidden" }}>
-      <iframe
-        style={{ border: "2px solid transperent", borderRadius: "8px" }}
-        title="PDF Viewer"
-        src={resume}
-        width="100%"
-        height="100%"
-        allowFullScreen
-      />
-    </div>
-  );
+  return <PDFViewer pdfUrl={resume} />;
 };
 
-export default MyResume;
+export default React.memo(MyResume);

@@ -9,17 +9,17 @@ const { Eye } = LucideIcons;
 import styles from "./About.module.css";
 
 const About = () => {
-  const [visibleItems, setVisibleItems] = useState(2);
+  const [visibleItems, setVisibleItems] = useState(3);
 
-  const toggleItemsVisibility = () => {
+  const toggleItemsVisibility = React.useCallback(() => {
     setVisibleItems((prevVisibleItems) =>
-      prevVisibleItems === 2 ? description.length : 2
+      prevVisibleItems === 3 ? description.length : 3
     );
-  };
+  }, [visibleItems]);
 
   const downloadResume = () => {
     const resumeLink =
-      "https://drive.google.com/file/d/11lhpij_d2v6ZP1mW0AZ2gaJaYqmWegOh/view?usp=drive_link";
+      "https://drive.google.com/file/d/12255Uh8YLXZ6oqf7SrlgwHD-sM4l1p5Z/view?usp=drive_link";
     window.open(resumeLink, "_blank");
   };
 
@@ -42,21 +42,32 @@ const About = () => {
         rounded
       >
         <Carousel images={images} />
-        <Box width="100%" margin="30px 0 0 0" className={styles.about_me_carousel_btn_cont}>
-          <Button onClick={downloadResume}>Download Resume</Button>
+        <Box
+          width="100%"
+          margin="30px 0 0 0"
+          className={styles.about_me_carousel_btn_cont}
+        >
+          <Button variant="help" onClick={downloadResume}>
+            Download Resume
+          </Button>
           <Tooltip text="Click To View" position="top" variant="info">
-            <Button onClick={moveToMyResume}>
+            <Button variant="help" onClick={moveToMyResume}>
               <Eye width="22px" height="22px" />
             </Button>
           </Tooltip>
         </Box>
       </Box>
-      <Box width="60%" height="500px" padding="15px" className={styles.about_desc_container}>
+      <Box
+        width="60%"
+        height="500px"
+        padding="15px"
+        className={styles.about_desc_container}
+      >
         <Paragraph
           fontSize="30px"
           fontWeight="700"
           color="#000"
-          style={{  lineHeight: "30px" }}
+          style={{ lineHeight: "30px" }}
           italic
         >
           Hi, I am Ravi Teja Ladi
@@ -65,7 +76,7 @@ const About = () => {
           fontWeight="600"
           color="#000"
           fontSize="25px"
-          style={{  lineHeight: "20px" }}
+          style={{ lineHeight: "20px" }}
           className={styles.about_me_desi}
         >
           I am a <TypingAnimation texts={textList} speed={100} />
@@ -73,12 +84,14 @@ const About = () => {
         <Box className={styles.about_me_desc}>
           {description.slice(0, visibleItems).map((item) => (
             <span key={item.id}>
-              <Paragraph color="#000">{item.desc}</Paragraph>
+              <Paragraph color="#6f42c1">{item.desc}</Paragraph>
             </span>
           ))}
-          {description.length > 2 && (
-            <Button onClick={toggleItemsVisibility}>
-              {visibleItems === 2 ? "Show More" : "Show Less"}
+          {description.length > 3 && (
+            <Button variant="help" onClick={toggleItemsVisibility}>
+              <Button.Text>
+                {visibleItems === 3 ? "Show More" : "Show Less"}
+              </Button.Text>
             </Button>
           )}
         </Box>
@@ -87,4 +100,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default React.memo(About);

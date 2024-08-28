@@ -32,6 +32,7 @@ import {
   office,
   postman,
   bitbucket,
+  award,
 } from "../assets/svgs";
 import { img3, img1, jsp, cutm, sric, alluri } from "../assets/images";
 import { generateId } from "../utils/generateId";
@@ -67,6 +68,12 @@ const sideNavData = [
     path: "/education",
     icon: education,
   },
+  {
+    id: generateId(),
+    label: "Awards",
+    path: "/awards",
+    icon: award,
+  },
 ];
 
 const TopNavData = [
@@ -85,23 +92,23 @@ const TopNavData = [
 let description = [
   {
     id: generateId(),
-    desc: "As a React.js frontend developer, I specialize in creating dynamic and intuitive user interfaces. My expertise lies in transforming design mockups into responsive, engaging UI components, consistently delivering high-quality web applications.",
+    desc: "React.js developer specializing in dynamic, intuitive user interfaces. Skilled at translating designs into responsive UI components.",
   },
   {
     id: generateId(),
-    desc: "I excel at leveraging React.js frameworks and libraries to develop scalable, modular code. This approach ensures application maintainability and performance. My experience includes successful collaboration with cross-functional teams, including designers, backend developers, and product managers, to create seamless user experiences and meet project objectives.",
+    desc: "Proficient in React.js frameworks for scalable, modular code. Experienced in cross-functional collaboration to meet project goals.",
   },
   {
     id: generateId(),
-    desc: "Throughout my career, I've maintained a passion for staying current with industry trends and best practices. My deep understanding of JavaScript, HTML, and CSS enables me to implement cutting-edge features and optimize website performance effectively.",
+    desc: "Committed to staying current with industry trends. Strong foundation in JavaScript, HTML, and CSS for optimized web performance.",
   },
   {
     id: generateId(),
-    desc: "My strong problem-solving skills allow me to tackle complex challenges and devise innovative solutions, resulting in efficient and elegant code. As a self-motivated professional, I thrive in fast-paced environments. My excellent communication skills foster effective collaboration and knowledge sharing within teams.",
+    desc: "Adept problem-solver, creating efficient and elegant solutions. Self-motivated professional with excellent communication skills.",
   },
   {
     id: generateId(),
-    desc: "I'm passionate about creating exceptional user experiences and driving positive impact through technology. Always eager to take on new projects, I'm ready to contribute my expertise to deliver top-notch solutions. I welcome connections on LinkedIn to explore potential collaborations or discuss the exciting world of React.js frontend development.",
+    desc: "Passionate about exceptional user experiences and technological impact. Eager to contribute expertise to new projects and collaborations.",
   },
 ];
 

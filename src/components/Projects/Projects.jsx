@@ -55,31 +55,42 @@ const ProjectSection = ({
   descriptionCode,
   description,
 }) => (
-  <Box padding="10px" margin="15px" outlined>
+  <Box
+    padding="10px"
+    margin="15px"
+    style={{ border: "1px solid #6f42c1" }}
+    rounded
+  >
     <Box padding="10px" title="Click To Redirect">
       <Link to={link} target="_blank">
-        <Heading type="h3" variant="primary">
+        <Heading type="h3" color="#6f42c1">
           {title}
         </Heading>
       </Link>
     </Box>
     <Divider margin="8px 0" />
     <Box padding="10px 0">
-      <UnOrderedList>
+      <UnOrderedList type="none">
         <UnOrderedList.Item>
-          <Paragraph>
-            {description[0]}
-            <Link to={descriptionLink} target="_blank">
-              <Code variant="danger" title={descriptionLink}>
-                {descriptionCode}
-              </Code>
-            </Link>
-            <br />
-          </Paragraph>
+          <Box style={{ display: "flex", gap: "10px" }}>
+          <span>💎</span>
+            <span>
+              {description[0]}
+              <Link to={descriptionLink} target="_blank">
+                <Code variant="help" title={descriptionLink}>
+                  {descriptionCode}
+                </Code>
+              </Link>
+              <br />
+            </span>
+          </Box>
         </UnOrderedList.Item>
         {description.slice(1).map((item, index) => (
           <UnOrderedList.Item key={index}>
-            <Paragraph>{item}</Paragraph>
+            <Box style={{ display: "flex", gap: "10px" }}>
+            <span>💎</span>
+              <span>{item}</span>
+            </Box>
           </UnOrderedList.Item>
         ))}
       </UnOrderedList>
@@ -91,30 +102,11 @@ const Projects = () => {
   return (
     <Box>
       <Box className={styles.pro_header}>
-        <Heading type="h1" color="#000">
+        <Heading type="h1" color="#6f42c1">
           Projects
         </Heading>
       </Box>
-      <Divider margin="10px" />
-      <Box
-        className={styles.projectLinks}
-        style={{
-          display: "flex",
-          justifyContent: "flex-start",
-          flexWrap: "wrap",
-        }}
-        title="Click To Redirect"
-      >
-        {additionalProjects.map((project, index) => (
-          <Box key={index} padding="10px" margin="15px" outlined>
-            <Link to={project.link} target="_blank">
-              <Heading type="h4" variant="secondary">
-                {project.title}
-              </Heading>
-            </Link>
-          </Box>
-        ))}
-      </Box>
+
       <Divider margin="10px" />
       {projectData.map((project, index) => (
         <ProjectSection
@@ -126,8 +118,34 @@ const Projects = () => {
           description={project.description}
         />
       ))}
+      <Divider margin="10px" />
+      <Box
+        className={styles.projectLinks}
+        style={{
+          display: "flex",
+          justifyContent: "flex-start",
+          flexWrap: "wrap",
+        }}
+        title="Click To Redirect"
+      >
+        {additionalProjects.map((project, index) => (
+          <Box
+            key={index}
+            padding="10px"
+            margin="15px"
+            style={{ border: "1px solid #6f42c1" }}
+            rounded
+          >
+            <Link to={project.link} target="_blank">
+              <Heading type="h4" color="#6f42c1">
+                {project.title}
+              </Heading>
+            </Link>
+          </Box>
+        ))}
+      </Box>
     </Box>
   );
 };
 
-export default Projects;
+export default React.memo(Projects);

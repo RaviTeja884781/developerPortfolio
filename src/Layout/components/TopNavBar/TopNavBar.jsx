@@ -11,6 +11,7 @@ import {
   usePortal,
   SideBar,
   Drawer,
+  Heading,
 } from "react-ui-essentials";
 const { Menu } = RoundedIcons;
 import ReactDOM from "react-dom";
@@ -75,7 +76,11 @@ const TopNavBar = () => {
               </Button.Icon>
             </Button>
           </div>
-          <TopBreadCrum />
+          <Box padding="5px 10px" margin="0px 10px" className={styles.topnav_title} rounded>
+            <Heading type="h5" color="#6f42c1">
+              My Story
+            </Heading>
+          </Box>
         </Box>
         <Box className={styles.top_nav_links}>
           {TopNavData.map((item) => (
@@ -97,8 +102,8 @@ const TopNavBar = () => {
           position="left"
           width={drawerWidth}
         >
-          <SideBar width="100%" >
-            <SideBar.Body routes={routes} />
+          <SideBar  width="100%" >
+            <SideBar.Body variant="help" routes={routes} />
           </SideBar>
         </Drawer>
       </SidebarPortal>
@@ -106,4 +111,4 @@ const TopNavBar = () => {
   );
 };
 
-export default TopNavBar;
+export default React.memo(TopNavBar);

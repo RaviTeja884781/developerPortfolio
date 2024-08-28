@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import styles from "./SideNavBar.module.css";
 import { sideNavData } from "../../../data/data";
 import { LinkCard } from "../../../components";
-import { Box, Paragraph } from "react-ui-essentials";
+import { Box } from "react-ui-essentials";
 
 const SideNavBar = () => {
   const location = useLocation();
@@ -22,4 +22,4 @@ const SideNavBar = () => {
   );
 };
 
-export default SideNavBar;
+export default React.memo(SideNavBar);

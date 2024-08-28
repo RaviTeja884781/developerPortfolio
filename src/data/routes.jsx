@@ -4,6 +4,7 @@ import {
   project,
   education,
   exp,
+  award,
 } from "../assets/svgs";
 import { generateId } from "../utils/generateId";
 
@@ -37,5 +38,11 @@ export const routes = [
     label: "Education",
     path: "/education",
     icons: education,
+  },
+  {
+    id: generateId(),
+    label: "Awards",
+    path: "/awards",
+    icons: award,
   },
 ];

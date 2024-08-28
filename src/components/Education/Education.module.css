@@ -16,7 +16,7 @@
 }
 
 .edu_card {
-    border: 1px solid #51a9f1 !important
+    border: 1px solid #6f42c1 !important
 }
 
 .edu_card_header {
@@ -24,7 +24,7 @@
 }
 
 .edu_card_header>img {
-    border: 1px solid rgba(81, 169, 241, .178);
+    border: 1px solid #6f42c1;
     border-radius: 8px;
     padding: 5px;
     width: 40px;

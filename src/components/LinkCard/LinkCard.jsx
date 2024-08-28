@@ -13,12 +13,12 @@ const LinkCard = ({ item, active }) => {
         width={active ? "5px" : ""}
         height={active ? "35px" : ""}
         margin="0px 2px"
-        backgroundColor={active ? "rgb(81, 169, 241)" : ""}
+        backgroundColor={active ? "#6f42c1" : ""}
         rounded
       ></Box>
       <Box width="90%" padding="8px 3px" className={styles.link_card} rounded>
         <img src={item.icon} alt="icons" />
-        <Paragraph color="#000" fontSize="12px" fontWeight="500">
+        <Paragraph color="#6f42c1" fontSize="12px" fontWeight="600">
           {item.label}
         </Paragraph>
       </Box>
@@ -35,4 +35,4 @@ LinkCard.propTypes = {
   }),
 };
 
-export default LinkCard;
+export default React.memo(LinkCard);

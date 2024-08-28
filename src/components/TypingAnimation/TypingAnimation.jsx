@@ -66,4 +66,4 @@ const TypingAnimation = ({ texts, speed }) => {
   );
 };
 
-export default TypingAnimation;
+export default React.memo(TypingAnimation);

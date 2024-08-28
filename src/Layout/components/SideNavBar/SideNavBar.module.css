@@ -7,7 +7,7 @@
     border-right: 1px solid transparent;
     overflow: scroll;
     overflow-x:hidden;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 1px !important;
+    box-shadow: #6f42c1 0px 0px 1px !important;
 }
 
 @media (max-width: 575.98px) {

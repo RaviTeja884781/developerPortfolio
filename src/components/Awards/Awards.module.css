@@ -1,0 +1,53 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #6f42c1;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.awardsContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.awardBox {
+    flex: 1;
+    min-width: 100%;
+    max-width: 300px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.awardBox:hover {
+    transform: translateY(-5px);
+}
+
+.awardImage {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.awardDescription {
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}

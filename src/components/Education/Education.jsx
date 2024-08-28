@@ -9,17 +9,17 @@ const Education = () => {
       <Box
         width="100%"
         padding="5px 20px"
-        margin="0px 0px 30px 0px"
         className={styles.edu_header}
       >
-        <Heading type="h1" color="#000">
+        <Heading type="h1" color="#6f42c1">
           Education
         </Heading>
-        <Paragraph color="#000">
+        <Paragraph color="#6f42c1">
           My education has been a journey of self-discovery and growth. My
           educational details are as follows.
         </Paragraph>
       </Box>
+      <Divider margin="10px" />
       <Box className={styles.edu_body}>
         {EducationInfo.map((item) => (
           <Box
@@ -31,7 +31,7 @@ const Education = () => {
           >
             <Box className={styles.edu_card_header}>
               <img src={item.icon} alt={item.icon} />
-              <Paragraph fontSize="15px" fontWeight="600" color="#000">
+              <Paragraph fontSize="15px" fontWeight="600" color="#6f42c1">
                 {item.institutionName.toUpperCase()}
               </Paragraph>
             </Box>
@@ -66,4 +66,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default React.memo(Education);

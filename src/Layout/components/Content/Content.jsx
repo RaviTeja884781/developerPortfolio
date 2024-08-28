@@ -10,4 +10,4 @@ Content.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Content;
+export default React.memo(Content);

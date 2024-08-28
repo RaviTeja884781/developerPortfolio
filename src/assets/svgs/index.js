@@ -32,7 +32,7 @@ import skills from "./sideNav/skills.svg";
 import project from "./sideNav/projects.svg";
 import exp from "./sideNav/experience.svg"
 import education from "./sideNav/education.svg";
-
+import award from "./award.svg"
 export {
   github,
   linkedin,
@@ -67,5 +67,6 @@ export {
   skills,
   project,
   education,
-  exp
+  exp,
+  award
 };

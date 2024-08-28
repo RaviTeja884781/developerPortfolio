@@ -6,7 +6,7 @@ import Education from "./Education/Education";
 import LinkCard from "./LinkCard/LinkCard";
 import TopBreadCrum from "./TopBreadCrum/TopBreadCrum";
 import MyResume from "./MyResume/MyResume";
-
+import Awards from "./Awards/Awards"
 export {
   About,
   Skills,
@@ -16,4 +16,5 @@ export {
   LinkCard,
   TopBreadCrum,
   MyResume,
+  Awards
 };

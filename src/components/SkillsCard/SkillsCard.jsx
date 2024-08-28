@@ -20,7 +20,7 @@ const SkillsCard = ({ data }) => {
           rounded
         >
           <img src={item.icon} alt={item.icon} />
-          <Paragraph color="#000" fontSize="14px" fontWeight="500">
+          <Paragraph color="#6f42c1" fontSize="14px" fontWeight="500">
             {item.label}
           </Paragraph>
         </Box>
@@ -29,4 +29,4 @@ const SkillsCard = ({ data }) => {
   );
 };
 
-export default SkillsCard;
+export default React.memo(SkillsCard);

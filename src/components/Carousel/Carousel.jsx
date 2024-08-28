@@ -14,13 +14,13 @@ const Carousel = ({ images }) => {
   };
   return (
     <Box className={styles.carousel}>
-      <Button
+      {/* <Button
         variant="light"
         className={styles.prev_button}
         onClick={handlePrevClick}
       >
         <ChevronLeft width="25px" height="25px" />
-      </Button>
+      </Button> */}
       <img
         className={styles.carousel_img}
         src={images[currentImage]}
@@ -28,14 +28,14 @@ const Carousel = ({ images }) => {
         width="450px"
         height="450px"
       />
-      <Button
+      {/* <Button
         variant="light"
         className={styles.next_button}
         onClick={handleNextClick}
       >
         <ChevronRight width="25px" height="25px" />
-      </Button>
+      </Button> */}
     </Box>
   );
 };
-export default Carousel;
+export default React.memo(Carousel);

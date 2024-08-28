@@ -11,7 +11,13 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    background: rgba(203, 199, 199, 0.349);
+    background: #f1ecf9;
+    border: 1px solid transparent !important;
+}
+
+.carousel_img:hover {
+    border: 1px solid #6f42c1 !important;
+
 }
 
 .prev_button,

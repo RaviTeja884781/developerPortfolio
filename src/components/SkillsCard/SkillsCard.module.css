@@ -10,7 +10,7 @@
 }
 
 .skills_card {
-    border: 1px solid rgba(81, 169, 241, 0.178) !important;
+    border: 1px solid #6f42c1 !important;
     display: flex !important;
     justify-content: flex-start;
     text-align: center;

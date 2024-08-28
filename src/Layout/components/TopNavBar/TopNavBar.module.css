@@ -1,7 +1,7 @@
 .top_nav_bar {
     position: fixed !important;
     border-bottom: 1px solid transparent !important;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 1px !important;
+    box-shadow: #6f42c1 0px 0px 1px !important;
     display: flex !important;
     justify-content: space-between;
     align-items: center;
@@ -25,10 +25,12 @@
 }
 
 .top_nav_link:hover {
-    background-color: rgba(81, 169, 241, 0.178);
+    background-color: #f1ecf9;
 }
 
-
+.topnav_title{
+    border: 2px solid #6f42c1 !important;
+}
 
 @media (max-width: 575.98px) {
     .top_nav_bar {

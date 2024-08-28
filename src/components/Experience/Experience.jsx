@@ -1,5 +1,11 @@
 import React from "react";
-import { Box, Divider, Heading, Paragraph, UnOrderedList } from "react-ui-essentials";
+import {
+  Box,
+  Divider,
+  Heading,
+  Paragraph,
+  UnOrderedList,
+} from "react-ui-essentials";
 import styles from "./Experience.module.css";
 
 const Experience = () => {
@@ -49,58 +55,70 @@ const Experience = () => {
   ];
   return (
     <Box>
-      <Box
-        width="100%"
-        padding="5px 20px"
-        margin="0px 0px 30px 0px"
-        className={styles.exp_header}
-      >
-        <Heading type="h1" color="#000">
+      <Box width="100%" padding="5px 20px" className={styles.exp_header}>
+        <Heading type="h1" color="#6f42c1">
           Experience
         </Heading>
-        <Paragraph color="#000">
+        <Paragraph color="#6f42c1">
           React.js Developer | {result.years} years {result.months} months
           Specialized in building complex web applications from scratch,
           focusing on scalable frontend architectures and high-performance React
           components.
         </Paragraph>
       </Box>
-      <Box padding="10px" margin="15px" outlined>
+      <Divider margin="10px" />
+      <Box
+        padding="10px"
+        margin="15px"
+        style={{ border: "1px solid #6f42c1" }}
+        rounded
+      >
         <Box padding="10px">
-          <Heading type="h3" variant="primary">
+          <Heading type="h3" color="#6f42c1">
             Professional summary
           </Heading>
         </Box>
-        <Divider margin="8px 0"/>
+        <Divider margin="8px 0" />
         <Box padding="10px 0">
-          <UnOrderedList>
+          <UnOrderedList type="none">
             {sum.map((item, index) => (
               <UnOrderedList.Item key={`${index}-${item.slice(0, 3)}`}>
-                {item}
+                <Box style={{ display: "flex", gap: "10px" }}>
+                  <span>💎</span>
+                  {item}
+                </Box>
               </UnOrderedList.Item>
             ))}
           </UnOrderedList>
         </Box>
       </Box>
-      <Box padding="10px" margin="15px" outlined>
+      <Box
+        padding="10px"
+        margin="15px"
+        style={{ border: "1px solid #6f42c1" }}
+        rounded
+      >
         <Box
           padding="10px"
           style={{ display: "flex", justifyContent: "space-between" }}
           className={styles.exp_box}
         >
-          <Heading type="h3" variant="primary">
+          <Heading type="h3" color="#6f42c1">
             Software Engineer at Idexcel Pvt Ltd
           </Heading>
           <Heading type="h4" variant="secondary">
             oct 2022- Present.
           </Heading>
         </Box>
-        <Divider margin="8px 0"/>
+        <Divider margin="8px 0" />
         <Box padding="10px 0">
-          <UnOrderedList>
+          <UnOrderedList type="none">
             {exp.map((skill, index) => (
               <UnOrderedList.Item key={`${index}-${skill.slice(0, 3)}`}>
-                {skill}
+                <Box style={{ display: "flex", gap: "10px" }}>
+                  <span>💎</span>
+                  {skill}
+                </Box>
               </UnOrderedList.Item>
             ))}
           </UnOrderedList>
@@ -110,4 +128,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default React.memo(Experience);

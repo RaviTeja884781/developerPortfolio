@@ -28,3 +28,24 @@ a {
 ::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
+
+.react-pdf__Page {
+    margin-top: 10px !important;
+}
+
+.react-pdf__Page__textContent {
+    display: none !important;
+}
+
+.annotationLayer {
+    padding: 0px;
+    width: 0px !important;
+    height: 0px !important;
+    display: none !important;
+}
+
+.react-pdf__Page__canvas {
+    margin: 0 auto !important;
+    display: block !important;
+    user-select: none !important;
+}
