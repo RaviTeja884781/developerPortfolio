@@ -14,7 +14,7 @@ const Education = () => {
         <Heading type="h1" color="#6f42c1">
           Education
         </Heading>
-        <Paragraph color="#6f42c1">
+        <Paragraph color="#000">
           My education has been a journey of self-discovery and growth. My
           educational details are as follows.
         </Paragraph>

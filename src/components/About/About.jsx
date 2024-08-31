@@ -19,7 +19,7 @@ const About = () => {
 
   const downloadResume = () => {
     const resumeLink =
-      "https://drive.google.com/file/d/12255Uh8YLXZ6oqf7SrlgwHD-sM4l1p5Z/view?usp=drive_link";
+      "https://drive.google.com/file/d/127DxmUGdI5HiaTnE77lBrGST7ShdoNTX/view?usp=drive_link";
     window.open(resumeLink, "_blank");
   };
 
@@ -84,7 +84,7 @@ const About = () => {
         <Box className={styles.about_me_desc}>
           {description.slice(0, visibleItems).map((item) => (
             <span key={item.id}>
-              <Paragraph color="#6f42c1">{item.desc}</Paragraph>
+              <Paragraph color="#000">{item.desc}</Paragraph>
             </span>
           ))}
           {description.length > 3 && (

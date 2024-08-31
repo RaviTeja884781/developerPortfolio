@@ -2,13 +2,22 @@ import React from "react";
 import styles from "./Awards.module.css";
 import awd1 from "./myAward1.jpg";
 import awd2 from "./myAward2.jpg";
+import { Box, Divider, Heading } from "react-ui-essentials";
 
 const Awards = () => {
   return (
     <div className={styles.container}>
-      <header className={styles.header}>
-        <h1 className={styles.title}>Awards</h1>
-      </header>
+      <Box
+        width="100%"
+        padding="5px 20px"
+        className={styles.awd_header}
+      >
+        <Heading type="h1" color="#6f42c1">
+        Awards and achievements
+        </Heading>
+
+      </Box>
+      <Divider margin="10px" />
       <div className={styles.awardsContainer}>
         <div className={styles.awardBox}>
           <img

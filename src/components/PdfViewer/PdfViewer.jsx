@@ -124,7 +124,7 @@ const PDFViewer = ({ pdfUrl }) => {
           options={{ workerSrc: "/pdf.worker.js" }}
           onLoadSuccess={onDocumentLoadSuccess}
         >
-          <Box width={viewerSize.width} height={viewerSize.height}>
+          <Box width="100%" height="auto">
             <Page
               size="A4"
               pageNumber={currentPage}

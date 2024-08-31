@@ -32,7 +32,7 @@ const Experience = () => {
   };
   const result = calculateYearsSinceStart("2022-10-15");
   const exp = [
-    "Lead Frontend Developer for InferlQ, a finance product developed from scratch over 2.3 years.",
+    "Lead Frontend Developer for InferlQ, a finance product developed from scratch over 2 years.",
     "Managed multiple environments (dev, test, demo, sandbox) for InferlQ, ensuring smooth deployment across all development stages.",
     "Developed high-performance services including Extraction, Bank statement analysis, and Financial statement processing, achieving 90% improvement in speed and performance.",
     "Handled 98% of frontend work, including enhancements and bug fixes.",
@@ -44,7 +44,7 @@ const Experience = () => {
   ];
 
   const sum = [
-    "React.js Developer with 2.3 years of experience building web applications from scratch.",
+    "React.js Developer with 2 years of experience building web applications from scratch.",
     "Proficient in React concepts and hooks, including useState, useEffect, useReducer, and useContext.",
     "Developed key features such as authentication systems, user dashboards, and billing interfaces.",
     "Experienced with UI component libraries like React Bootstrap, Material-UI, and PrimeReact.",
@@ -59,8 +59,8 @@ const Experience = () => {
         <Heading type="h1" color="#6f42c1">
           Experience
         </Heading>
-        <Paragraph color="#6f42c1">
-          React.js Developer | {result.years} years {result.months} months
+        <Paragraph color="#000">
+          React.js Developer | 2 years 
           Specialized in building complex web applications from scratch,
           focusing on scalable frontend architectures and high-performance React
           components.

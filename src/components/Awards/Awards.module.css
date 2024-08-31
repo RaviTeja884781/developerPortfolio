@@ -4,6 +4,13 @@
     padding: 20px;
 }
 
+.awd_header {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px
+}
+
 .header {
     background-color: #f8f9fa;
     padding: 20px;
@@ -25,19 +32,17 @@
 }
 
 .awardBox {
+    display: flex;
+    padding: 10px;
     flex: 1;
     min-width: 100%;
     max-width: 300px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
     overflow: hidden;
     transition: transform 0.3s ease;
+    border: 1px solid #6f42c1;
 }
 
-.awardBox:hover {
-    transform: translateY(-5px);
-}
 
 .awardImage {
     width: 100%;

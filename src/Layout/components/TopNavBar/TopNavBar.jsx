@@ -62,7 +62,7 @@ const TopNavBar = () => {
         <Box style={{ display: "flex", gap: "15px" }}>
           <div className={styles.topnav_menu}>
             <Button
-              variant="light"
+              variant="help"
               size="sm"
               aria-label="Menu"
               onClick={toggleSidebar}

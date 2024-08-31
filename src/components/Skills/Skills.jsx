@@ -15,7 +15,7 @@ const Skills = () => {
         <Heading type="h1" color="#6f42c1" >
           Skills
         </Heading>
-        <Paragraph color="#6f42c1" >
+        <Paragraph color="#000" >
           Here are some of my skills on which I have been working on for the
           past 2 years.
         </Paragraph>

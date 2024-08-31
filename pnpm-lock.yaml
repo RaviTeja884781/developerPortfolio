@@ -21,8 +21,8 @@ dependencies:
     specifier: ^6.26.1
     version: 6.26.1(react-dom@18.3.1)(react@18.3.1)
   react-ui-essentials:
-    specifier: ^1.0.22
-    version: 1.0.22(react-dom@18.3.1)(react@18.3.1)
+    specifier: ^1.0.23
+    version: 1.0.23(react-dom@18.3.1)(react@18.3.1)
   react-ui-essentials-icons:
     specifier: ^1.0.3
     version: 1.0.3(react@18.3.1)
@@ -2198,8 +2198,8 @@ packages:
       react: 18.3.1
     dev: false
 
-  /react-ui-essentials@1.0.22(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-he7f9TXIX+D8/IAHmiSfHKECUbr0cb5kbHf05dl047Syynef7QfdLBa6DhGAledNxfsTokxrZ6Ml/m5hWPLn3w==}
+  /react-ui-essentials@1.0.23(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-lk5TRyCOWloazL3go3UnjsicEGi0Nqfsu5Z4QS/BGAhZkvkcgY86mqelxt4ZgW/2c59AynbjMEBunxX6A1bjJQ==}
     engines: {node: '>=10'}
     peerDependencies:
       react: ^16.0.0
