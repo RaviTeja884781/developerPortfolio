@@ -56,7 +56,17 @@ const ControlPanel = React.memo(
       >
         <ChevronLeft width="20px" height="20px" fill="#fff" />
       </Button>
-      <Paragraph>
+      <Paragraph
+        fontSize="12px"
+        fontWeight="500"
+        color="#fff"
+        style={{
+          border: "1px solid #a184d7",
+          padding: "3px 5px",
+          borderRadius: "4px",
+          backgroundColor: "#a184d7",
+        }}
+      >
         {currentPage} / {numPages}
       </Paragraph>
       <Button

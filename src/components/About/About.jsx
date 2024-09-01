@@ -19,7 +19,7 @@ const About = () => {
 
   const downloadResume = () => {
     const resumeLink =
-      "https://drive.google.com/file/d/127DxmUGdI5HiaTnE77lBrGST7ShdoNTX/view?usp=drive_link";
+      "https://drive.google.com/file/d/12Hq0STqjWDHdi1O7-2VmCPSgLoxHYGus/view?usp=drive_link";
     window.open(resumeLink, "_blank");
   };
 

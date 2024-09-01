@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../assets/Ravi Teja L(Beng).pdf";
+import resume from "../../assets/RaviTeja(Beng).pdf";
 import PDFViewer from "../PdfViewer/PdfViewer";
 
 const MyResume = () => {
