@@ -115,10 +115,10 @@ let description = [
 const images = [img3, img1];
 
 const textList = [
+  "React Js Developer",
+  "Front-End Developer",
   "Full stack Developer",
   "MERN Developer",
-  "Front-End Developer",
-  "Creator",
 ];
 
 const ContactInfo = {
